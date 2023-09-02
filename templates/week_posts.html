@@ -1,0 +1,30 @@
+{% block title %}
+Новые записи в категориях, на которые вы подписаны
+{% endblock title %}
+
+{% block content %}
+   <h1>Новые посты за неделю</h1>
+   {% if posts %}
+       <table>
+           <tr>
+               <td>Заголовок</td>
+               <td>Дата публикации</td>
+               <td>Краткое содержание</td>
+           </tr>
+
+
+           {% for post in posts %}
+           <tr>
+               <td><a href="http://127.0.0.1:8000/posts/{{ post.id }}">{{ post.title }}</a></td>
+               <td>{{ post.time_in|date:'d M Y' }}</td>
+               <td>{{ post.text|truncatechars:200 }}</td>
+
+           </tr>
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Новых записей нет!</h2>
+   {% endif %}
+
+{% endblock content %}

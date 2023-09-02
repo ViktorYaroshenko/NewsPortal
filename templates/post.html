@@ -1,0 +1,16 @@
+{% extends 'flatpages/default.html' %}
+
+{% load censor %}
+{% load cache %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+<h1>{{ post }}</h1>
+<p></p>
+<h5>Дата публикации: {{ post.time_in|date:'d.M.Y года' }}</h5>
+<p></p>
+<h3>{{ post.text|change }}</h3>
+{% endblock content %}

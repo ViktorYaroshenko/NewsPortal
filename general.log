@@ -1,0 +1,4 @@
+2023-09-22 23:01:44,366 INFO autoreload Watching for file changes with StatReloader
+2023-09-22 23:03:09,526 INFO autoreload C:\Users\User\PycharmProjects\DJANGO\NewsPortal\NewsPortal\settings.py changed, reloading.
+2023-09-22 23:03:11,811 INFO autoreload Watching for file changes with StatReloader
+2023-09-22 23:04:05,457 INFO autoreload C:\Users\User\PycharmProjects\DJANGO\NewsPortal\NewsPortal\settings.py changed, reloading.
